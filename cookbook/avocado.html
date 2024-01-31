@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ingredient Spotlight - Avocado</title>
+    <style>
+        .carousel-container {
+            width: 500px;
+            max-width: 330px;
+            max-height: 460px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-btn {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: white;
+            background-color: #333;
+            border: none;
+            padding: 10px;
+            outline: none;
+            user-select: none;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+    </style>
+</head>
+
+<body>
+    <div class="site-name"><a href="menu.html">CookBook</a></div>
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenus()"> <!--changed section-->
+
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="menu.html">Home</a></li>
+                <li class="submenu" onclick="toggleDropdown('recipes')">
+                    <span>Recipes</span>
+                    <ul class="dropdown" id="recipesDropdown">
+                        <li><a href="Popular.html">Popular</a></li>
+                        <li><a href="Ingredients.html">Ingredients</a></li>
+                        <li><a href="Diet.html">Diet</a></li>
+                        <li><a href="Meals.html">Meals</a></li>
+                    </ul>
+                </li>
+                <li class="submenu" onclick="toggleDropdown('cuisines')">
+                    <span>Cuisines</span>
+                    <ul class="dropdown" id="cuisinesDropdown">
+                        <li><a href="cuisine1.html">Cuisine 1</a></li>
+                        <li><a href="cuisine2.html">Cuisine 2</a></li>
+                        <li><a href="cuisine2.html">Cuisine 2</a></li>
+                        <li><a href="cuisine2.html">Cuisine 2</a></li>
+                    </ul>
+                </li>
+                <li class="submenu" onclick="toggleDropdown('tipsAndtricks')">
+                    <span>Tips & Tricks</span>
+                    <ul class="dropdown" id="tipsAndtricksDropdown">
+                        <li><a href="KitchenTips&Skills.html">Kitchen Tips & Skills</a></li>
+                        <li><a href="FoodHacks.html">Food Hacks</a></li>
+                        <li><a href="ApplianceCooking.html">Appliance Cooking</a></li>
+                        <li><a href="MealPlans.html">Meal Plans</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Content goes here -->
+    <div class="blog-container">
+        <!-- Blog 1 -->
+        <div class="blog">
+            <img src="Images/Avocado/istockphoto-1455311913-1024x1024.jpg" alt="Blog 1 Image">
+            <div class="blog-content">
+                <h2><a href="avocado.html">Ingredient Spotlight - Avocado</a></h2>
+                <p>Avocado, often hailed as nature's butter, has transcended its popularity in guacamole. Explore the rich world of avocados, from their historical roots to their diverse culinary applications.</p>
+
+                <h3>1. Origins and Varieties:</h3>
+                <p>Begin with an exploration of the origins of avocados, tracing their roots back to Central and South America. Discuss various avocado varieties such as Hass, Fuerte, and Reed, accompanied by detailed images illustrating the distinct characteristics of each.</p>
+                <img src="Images/Avocado/istockphoto-1359819435-1024x1024.jpg" alt="Blog 1 Image">
+
+                <h3>2. Nutritional Benefits:</h3>
+                <p>Delve deeper into the nutritional richness of avocados, breaking down the monounsaturated fats, vitamins (especially vitamin K and folate), and minerals they offer. Create visually appealing infographics or charts to present nutritional information in a digestible format.</p>
+                <img src="Images\Avocado\istockphoto-1205136912-1024x1024.jpg" alt="Blog 1 Image">
+
+                <h3>3. Culinary Versatility:</h3>
+                <p>Showcase the versatility of avocados in the kitchen. Provide a selection of recipes ranging from the classic guacamole to avocado chocolate mousse. Integrate high-quality images and step-by-step cooking videos to guide readers through the preparation process.</p>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <img src="Images\Avocado\istockphoto-638951176-1024x1024.jpg" alt="Image 1">
+                        <img src="Images\Avocado\istockphoto-1141120666-1024x1024.jpg" alt="Image 2">
+                        <img src="Images\Avocado\istockphoto-1161980815-1024x1024.jpg" alt="Image 3">
+                    </div>
+                    <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+                    <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+                </div>
+
+                <h3>4. Sustainability and Farming Practices:</h3>
+                <p>Shed light on sustainable avocado farming practices, addressing concerns related to deforestation and water usage. Use infographics or charts to illustrate eco-friendly farming techniques, and include images capturing the scenic avocado orchards.</p>
+                <img src="Images\Avocado\istockphoto-176767098-1024x1024.jpg" alt="Blog 1 Image">
+
+                <h3>5. Tips for Selection and Storage:</h3>
+                <p>Offer practical tips on selecting ripe avocados based on touch and color cues. Provide guidance on optimal storage conditions to prevent premature ripening. Include images demonstrating the stages of ripeness and the best ways to store avocados.</p>
+
+                <h3>6. Avocado Artistry:</h3>
+                <p>Unveil the artistic side of avocados, showcasing intricate carvings, garnishes, and culinary presentations. Feature images of visually stunning avocado creations and perhaps a time-lapse video of an avocado carving artist at work.</p>
+
+                <h3>Conclusion:</h3>
+                <video width="640" height="360" controls>
+                    <source src="Images\Avocado\istockphoto-1139826229-640_adpp_is.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>In conclusion, avocados prove to be more than just a culinary delight; they are a nutritional powerhouse and a canvas for culinary creativity. From exploring their origins and varieties to uncovering their sustainable cultivation, we've journeyed through the diverse facets of this green gem. Whether you're savoring the creamy texture in classic guacamole or experimenting with avocado artistry, the possibilities are as rich and varied as the fruit itself. As you embark on your avocado culinary adventures, share your experiences and favorite recipes with our community. Let the avocado inspire not only your taste buds but also your imagination.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- F00ter -->
+    <div class="bar"></div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">User Agreement</a></li>
+                    <li><a href="#">Send Feedback</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 CookBook. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        let currentIndex = 0;
+    
+        function showSlide(index) {
+            const carousel = document.querySelector('.carousel');
+            const totalSlides = carousel.children.length;
+    
+            if (index < 0) {
+                currentIndex = totalSlides - 1;
+            } else if (index >= totalSlides) {
+                currentIndex = 0;
+            } else {
+                currentIndex = index;
+            }
+    
+            const translateValue = -currentIndex * 100 + '%';
+            carousel.style.transform = 'translateX(' + translateValue + ')';
+        }
+    
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+    
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+    
+    
+        setInterval(nextSlide, 3000);
+    </script>
+
+</body>
+
+</html>

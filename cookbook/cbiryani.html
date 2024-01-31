@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Biryani</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="site-name"><a href="menu.html">CookBook</a></div>
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenus()"> <!--changed section-->
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="menu.html">Home</a></li>
+                <li class="submenu" onclick="toggleDropdown('recipes')">
+                    <span>Recipes</span>
+                    <ul class="dropdown" id="recipesDropdown">
+                        <li><a href="Popular.html">Popular</a></li>
+                        <li><a href="Ingredients.html">Ingredients(demo)</a></li>
+                        <li><a href="Diet.html">Diet(demo)</a></li>
+                        <li><a href="Meals.html">Meals(demo)</a></li>
+                    </ul>
+                </li>
+                <li class="submenu" onclick="toggleDropdown('cuisines')">
+                    <span>Cuisines</span>
+                    <ul class="dropdown" id="cuisinesDropdown">
+                        <li><a href="cuisine1.html">Cuisine 1(demo)</a></li>
+                        <li><a href="cuisine2.html">Cuisine 2(demo)</a></li>
+                        <li><a href="cuisine2.html">Cuisine 3(demo)</a></li>
+                        <li><a href="cuisine2.html">Cuisine 4(demo)</a></li>
+                    </ul>
+                </li>
+                <li class="submenu" onclick="toggleDropdown('tipsAndtricks')">
+                    <span>Tips & Tricks</span>
+                    <ul class="dropdown" id="tipsAndtricksDropdown">
+                        <li><a href="KitchenTips&Skills.html">Kitchen Tips & Skills(demo)</a></li>
+                        <li><a href="FoodHacks.html">Food Hacks(demo)</a></li>
+                        <li><a href="ApplianceCooking.html">Appliance Cooking(demo)</a></li>
+                        <li><a href="MealPlans.html">Meal Plans(demo)</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Content goes here -->
+    <div class="blog-container">
+        <div class="blog">
+            <h1>Chicken Biryani: A Flavorful Symphony of Spices and Fragrant Basmati Rice</h1>
+            <img src="Images\Popular\istockphoto-1333127675-1024x1024.jpg" alt="Blog 2 Image">
+            <h2>Introduction</h2>
+            <p>
+                Experience the culinary magic of Chicken Biryani, a dish that brings together succulent pieces of marinated
+                chicken and fragrant basmati rice in a harmonious blend of spices. The chicken, infused with a marinade
+                of yogurt, ginger-garlic paste, and aromatic spices, achieves a perfect balance of tenderness and flavor.
+                Layered with partially cooked rice, biryani masala, and golden-fried onions, each bite is a journey
+                through a symphony of tastes and textures. Slow-cooked to perfection in the traditional dum style, this
+                Chicken Biryani is not just a meal; it's a celebration of the rich culinary heritage that graces our
+                tables. Delight your senses with this aromatic masterpiece, where every grain of rice and every tender
+                morsel of chicken tells a tale of spices and love.
+            </p>
+
+            <h2>Chicken Biryani Recipe</h2>
+
+            <h3>Ingredients for Marinating Chicken:</h3>
+            <ul>
+                <li>500g chicken, cut into pieces</li>
+                <li>1 cup yogurt</li>
+                <li>1 tablespoon ginger-garlic paste</li>
+                <li>1 teaspoon turmeric powder</li>
+                <li>1 teaspoon red chili powder</li>
+                <li>1 teaspoon biryani masala</li>
+                <li>Salt to taste</li>
+                <li>Fresh coriander and mint leaves, chopped</li>
+            </ul>
+
+            <h3>Ingredients for Rice:</h3>
+            <ul>
+                <li>2 cups basmati rice, soaked for 30 minutes</li>
+                <li>4-5 cups water</li>
+                <li>1-2 bay leaves</li>
+                <li>4-5 green cardamom pods</li>
+                <li>4-5 cloves</li>
+                <li>2-inch cinnamon stick</li>
+                <li>Salt to taste</li>
+            </ul>
+
+            <h3>Ingredients for Biryani Masala:</h3>
+            <ul>
+                <li>1 teaspoon cumin seeds</li>
+                <li>1 teaspoon coriander seeds</li>
+                <li>1 teaspoon fennel seeds</li>
+                <li>1 black cardamom</li>
+                <li>4-5 peppercorns</li>
+                <li>2-3 green cardamom pods</li>
+                <li>2 cloves</li>
+                <li>1-inch cinnamon stick</li>
+            </ul>
+
+            <h3>Ingredients for Biryani Layering:</h3>
+            <ul>
+                <li>2 large onions, thinly sliced and fried until golden brown</li>
+                <li>Ghee or oil for frying and layering</li>
+                <li>Saffron strands soaked in warm milk (for color and aroma)</li>
+            </ul>
+            <img src="Images\Popular\istockphoto-501137061-1024x1024.jpg" alt="Blog 2 Image">
+            <h2>Instructions</h2>
+
+            <h3>1. Marinate the Chicken:</h3>
+            <ol>
+                <li>In a bowl, mix chicken with yogurt, ginger-garlic paste, turmeric powder, red chili powder, biryani
+                    masala, salt, and chopped coriander-mint leaves.</li>
+                <li>Allow it to marinate for at least 1-2 hours or preferably overnight in the refrigerator.</li>
+            </ol>
+
+            <h3>2. Prepare Rice:</h3>
+            <ol>
+                <li>Boil soaked basmati rice with bay leaves, green cardamom pods, cloves, cinnamon stick, and salt
+                    until it's 70-80% cooked.</li>
+                <li>Drain the water and set the rice aside.</li>
+            </ol>
+
+            <h3>3. Prepare Biryani Masala:</h3>
+            <ol>
+                <li>Dry roast cumin seeds, coriander seeds, fennel seeds, black cardamom, peppercorns, green cardamom
+                    pods, cloves, and cinnamon stick.</li>
+                <li>Grind the roasted spices into a fine powder. This is your biryani masala.</li>
+            </ol>
+
+            <h3>4. Cook the Marinated Chicken:</h3>
+            <ol>
+                <li>In a heavy-bottomed pan, heat ghee or oil. Add the marinated chicken and cook until the chicken is
+                    browned and cooked through. Set aside.</li>
+            </ol>
+
+            <h3>5. Layering the Biryani:</h3>
+            <ol>
+                <li>In a large, heavy-bottomed pot, start by layering half of the partially cooked rice.</li>
+                <li>Spread a layer of the cooked chicken over the rice.</li>
+                <li>Sprinkle half of the biryani masala over the chicken.</li>
+                <li>Add a layer of fried onions and drizzle with ghee or oil.</li>
+                <li>Repeat the layers with the remaining rice, chicken, biryani masala, and fried onions.</li>
+                <li>Top with saffron-infused milk for color and aroma.</li>
+            </ol>
+
+            <h3>6. Dum Cooking:</h3>
+            <ol>
+                <li>Seal the pot with a tight-fitting lid or aluminum foil to create a dum (slow-cooking) effect.</li>
+                <li>Cook on low heat for 20-25 minutes or until the rice is fully cooked.</li>
+            </ol>
+            <video width="640" height="360" controls>
+                <source src="Images\Popular\istockphoto-1319189476-640_adpp_is.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>7. Serve:</h3>
+            <ol>
+                <li>Gently fluff the biryani with a fork.</li>
+                <li>Serve hot, garnished with fresh coriander and mint leaves.</li>
+            </ol>
+
+            <p>Enjoy your delicious homemade Chicken Biryani! Adjust the spice levels and ingredients according to your
+                taste preferences.</p>
+        </div>
+    </div>
+
+    <!-- F00ter -->
+    <div class="bar"></div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">User Agreement</a></li>
+                    <li><a href="#">Send Feedback</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 CookBook. All rights reserved.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

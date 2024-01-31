@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyle.css">
+    
+    <title>Login/Sign-up Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <form id="loginForm" class="form">
+            <h2>Login</h2>
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" name="loginUsername" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <form id="signupForm" class="form">
+            <h2>Sign Up</h2>
+            <label for="signupUsername">Username:</label>
+            <input type="text" id="signupUsername" name="signupUsername" required>
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" name="signupPassword" required>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

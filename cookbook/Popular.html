@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Recipe Cards</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="recipestyle.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="site-name"><a href="menu.html">CookBook</a></div>
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenus()"> <!--changed section-->
+
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="menu.html">Home</a></li>
+                <li class="submenu" onclick="toggleDropdown('recipes')">
+                    <span>Recipes</span>
+                    <ul class="dropdown" id="recipesDropdown">
+                        <li><a href="Popular.html">Popular</a></li>
+                        <li><a href="Ingredients.html">Ingredients(demo)</a></li>
+                        <li><a href="Diet.html">Diet(demo)</a></li>
+                        <li><a href="Meals.html">Meals(demo)</a></li>
+                    </ul>
+                </li>
+                <li class="submenu" onclick="toggleDropdown('cuisines')">
+                    <span>Cuisines</span>
+                    <ul class="dropdown" id="cuisinesDropdown">
+                        <li><a href="cuisine1.html">Cuisine 1(demo)</a></li>
+                        <li><a href="cuisine2.html">Cuisine 2(demo)</a></li>
+                        <li><a href="cuisine2.html">Cuisine 3(demo)</a></li>
+                        <li><a href="cuisine2.html">Cuisine 4(demo)</a></li>
+                    </ul>
+                </li>
+                <li class="submenu" onclick="toggleDropdown('tipsAndtricks')">
+                    <span>Tips & Tricks</span>
+                    <ul class="dropdown" id="tipsAndtricksDropdown">
+                        <li><a href="KitchenTips&Skills.html">Kitchen Tips & Skills(demo)</a></li>
+                        <li><a href="FoodHacks.html">Food Hacks(demo)</a></li>
+                        <li><a href="ApplianceCooking.html">Appliance Cooking(demo)</a></li>
+                        <li><a href="MealPlans.html">Meal Plans(demo)</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="cards-wrapper">
+      <!-- Recipe 1 Card -->
+      <div class="card-grid-space">
+        <div class="num">01</div>
+        <a class="card" href="cbiryani.html" style="background-image: url('D:\cookbook\Images\Popular\istockphoto-1333127675-1024x1024.jpg');">
+          <div>
+            <h1>Chicken Biryani</h1>
+            <p>A Flavorful Symphony of Spices and Fragrant Basmati Rice.</p>
+            <div class="tags">
+              <div class="tag">Main</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Recipe 2 Card -->
+      <div class="card-grid-space">
+        <div class="num">02</div>
+        <a class="card" href="#">
+          <div style="--bg-img: url('path-to-recipe2-image.jpg')">
+            <h1>Fish Curry</h1>
+            <p>Description of Recipe 2...</p>
+   
+            <div class="tags">
+              <div class="tag">Main</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Recipe 3 Card -->
+      <div class="card-grid-space">
+        <div class="num">03</div>
+        <a class="card" href="#">
+          <div style="--bg-img: url('path-to-recipe2-image.jpg')">
+            <h1>Sandesh</h1>
+            <p>Description of Recipe 2...</p>
+            <div class="tags">
+              <div class="tag">Dessert</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Recipe 4 Card -->
+      <div class="card-grid-space">
+        <div class="num">04</div>
+        <a class="card" href="#">
+          <div style="--bg-img: url('path-to-recipe2-image.jpg')">
+            <h1>Recipe 2</h1>
+            <p>Description of Recipe 2...</p>
+            <div class="tags">
+              <div class="tag">Tag 1</div>
+        
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Recipe 5 Card -->
+      <div class="card-grid-space">
+        <div class="num">05</div>
+        <a class="card" href="#">
+          <div style="--bg-img: url('path-to-recipe2-image.jpg')">
+            <h1>Recipe 2</h1>
+            <p>Description of Recipe 2...</p>
+      
+            <div class="tags">
+              <div class="tag">Tag 1</div>
+        
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Recipe 6 Card -->
+      <div class="card-grid-space">
+        <div class="num">06</div>
+        <a class="card" href="#">
+          <div style="--bg-img: url('path-to-recipe2-image.jpg')">
+            <h1>Recipe 2</h1>
+            <p>Description of Recipe 2...</p>
+         
+            <div class="tags">
+              <div class="tag">Tag 1</div>
+          
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- F00ter -->
+    <div class="bar"></div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">User Agreement</a></li>
+                    <li><a href="#">Send Feedback</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 CookBook. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    </section>
+  </body>
+</html>
