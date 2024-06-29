@@ -1,0 +1,54 @@
+# depslib dependency file v1.0
+1584205420 source:d:\problems\maze_runner\main.cpp
+	<iostream>
+
+1719331977 source:d:\problems\maze_runner\graphs.cpp
+	"Create_graph.h"
+
+1719331915 d:\problems\maze_runner\create_graph.h
+	<stdio.h>
+	<iostream>
+	<windows.h>
+	<cstdlib>
+	<list>
+	<stack>
+	<vector>
+	<algorithm>
+	<time.h>
+	<set>
+	<cstdlib>
+	<stdlib.h>
+
+1719348953 source:d:\problems\maze_runner\mazes.cpp
+	"Create_maze.h"
+
+1719347985 d:\problems\maze_runner\create_maze.h
+	<stdio.h>
+	<iostream>
+	<windows.h>
+	<cstdlib>
+	<list>
+	<stack>
+	<vector>
+	<algorithm>
+	<time.h>
+	<set>
+	<cstdlib>
+	<stdlib.h>
+	"Create_graph.h"
+
+1719379146 source:d:\problems\maze_runner\maze_runner.cpp
+	<stdio.h>
+	<iostream>
+	<windows.h>
+	<cstdlib>
+	<list>
+	<stack>
+	<vector>
+	<algorithm>
+	<time.h>
+	<set>
+	<cstdlib>
+	<stdlib.h>
+	"Create_maze.h"
+
